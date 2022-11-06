@@ -7,10 +7,13 @@ import org.springframework.stereotype.Component;
 
 //Hace lo mismo que la notación "@Service"
 @Component
-public class MiServicio {
-    
+public class MiServicio implements IServicio {
+
+    //Esta notación indica que el metodo es implemtacion del padre osea "IServicio"
+    @Override
     public String operacion() {
         return "ejecutando algun proceso";
     }
 
 }
+    
