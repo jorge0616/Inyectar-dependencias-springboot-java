@@ -1,6 +1,7 @@
 package com.inyeccion.factura.model.service;
 
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 //Esta notación se refiere a que con una sola instancia se puede inyectar en otros componentes
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 //Hace lo mismo que la notación "@Service"
 @Component("miServicioC")
-//@Primary //permite seleccinar la implemntacion que se va a inyectar por defecto
+@Primary //permite seleccinar la implemntacion que se va a inyectar por defecto
 public class MiServicioComplejo implements IServicio {
 
     //Esta notación indica que el metodo es implemtacion del padre osea "IServicio"
